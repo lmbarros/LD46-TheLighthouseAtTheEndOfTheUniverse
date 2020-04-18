@@ -18,10 +18,9 @@ Game title is based on two books. Which ones is left as an exercise for the play
 ## Notes to self
 
 ### TODO
-* HUD: Lighthouse health
-* HUD: Player health
-* HUD: Score
+
 * Game Over screen
+* Player suffers damage if collides with enemy
 * Waves of enemies
 * Basic sound effects
 * Explosion particle effect
@@ -29,6 +28,7 @@ Game title is based on two books. Which ones is left as an exercise for the play
 * Kamikaze behavior
 * Fighter (enemy that targets the player or the lighthouse)
 * Waves get more and more difficult
+* HUD: Score
 * Sniper (enemy that targets the lighthouse from distance)
 * Resource: plasteel (blue)
 * Asteroids

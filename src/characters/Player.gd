@@ -55,8 +55,11 @@ func getSpeed() -> float:
 # Suffers damage, maybe dies.
 func sufferDamage(damage: float) -> void:
 	health -= damage
+	health = max(health, 0.0)
+
 	if health <= 0:
 		die()
+		
 
 
 # Dies. Triggers game over.
