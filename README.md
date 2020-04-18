@@ -17,6 +17,15 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ## Notes to self
 
+### Layers
+
+* Layer 0: Lighthouse
+* Layer 1: Player
+* Layer 2: Asteroids
+* Layer 3: Enemies
+* Layer 4: Bullets
+* Layer 5: Mines
+
 ### Screen
 
 * Game window: 1280 x 720
