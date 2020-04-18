@@ -19,7 +19,7 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Player suffers damage if collides with enemy
+* Enemy method to determine instantiation point
 * Waves of enemies
 * Basic sound effects
 * Explosion particle effect
@@ -29,6 +29,8 @@ Game title is based on two books. Which ones is left as an exercise for the play
 * Waves get more and more difficult
 * HUD: Score
 * Sniper (enemy that targets the lighthouse from distance)
+* Main menu: start, quit
+* Main menu: help
 * Resource: plasteel (blue)
 * Asteroids
 * Asteroid mining

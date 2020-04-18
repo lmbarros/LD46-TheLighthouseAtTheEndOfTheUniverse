@@ -16,15 +16,15 @@ var isDead = false
 
 onready var _bulletClass = preload("res://bullets/WeakBullet.tscn")
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	if isDead:
 		return
 
-	_processMove()
+	_processMove(delta)
 	_processFire()
 
 
-func _processMove() -> void:
+func _processMove(delta: float) -> void:
 	_velocity = Vector2(
 		Input.get_action_strength("moveRight") - Input.get_action_strength("moveLeft"),
 		Input.get_action_strength("moveDown") - Input.get_action_strength("moveUp"))
@@ -34,12 +34,17 @@ func _processMove() -> void:
 		_velocity = _velocity.normalized()
 
 	# No need to multiply by delta (this is implied by move_and_slide)
-	_velocity *= TOP_SPEED
+	_velocity *= TOP_SPEED * delta
 
 	if _velocity.length_squared() > 0:
 		rotation = _velocity.angle()
 
-	move_and_slide(_velocity)
+	var col := move_and_collide(_velocity)
+	if col != null:
+		var target := col.collider
+		if target.is_in_group("enemies"):
+			sufferDamage(target.getCollisionDamage())
+			target.commonDie()
 
 
 func _processFire() -> void:
@@ -59,7 +64,6 @@ func sufferDamage(damage: float) -> void:
 
 	if health <= 0:
 		die()
-		
 
 
 # Dies. Triggers game over.
