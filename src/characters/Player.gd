@@ -9,7 +9,7 @@ var maxHealth: float = 10.0
 var health: float = maxHealth
 
 # Current velocity
-var _velocity = Vector2(0, 0)
+var velocity = Vector2(0, 0)
 
 # Is the player dead?
 var isDead = false
@@ -25,21 +25,20 @@ func _process(delta: float) -> void:
 
 
 func _processMove(delta: float) -> void:
-	_velocity = Vector2(
+	velocity = Vector2(
 		Input.get_action_strength("moveRight") - Input.get_action_strength("moveLeft"),
 		Input.get_action_strength("moveDown") - Input.get_action_strength("moveUp"))
 
 	# If using keys, diagonals will be [1, 1]. Clamp to unit vector.
-	if _velocity.length_squared() > 1.0:
-		_velocity = _velocity.normalized()
+	if velocity.length_squared() > 1.0:
+		velocity = velocity.normalized()
 
-	# No need to multiply by delta (this is implied by move_and_slide)
-	_velocity *= TOP_SPEED * delta
+	velocity *= TOP_SPEED
 
-	if _velocity.length_squared() > 0:
-		rotation = _velocity.angle()
+	if velocity.length_squared() > 0:
+		rotation = velocity.angle()
 
-	var col := move_and_collide(_velocity)
+	var col := move_and_collide(velocity * delta)
 	if col != null:
 		var target := col.collider
 		if target.is_in_group("enemies"):
@@ -54,7 +53,7 @@ func _processFire() -> void:
 
 
 func getSpeed() -> float:
-	return _velocity.length()
+	return velocity.length()
 
 
 # Suffers damage, maybe dies.
