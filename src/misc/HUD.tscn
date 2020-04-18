@@ -79,3 +79,14 @@ text = "123"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="WaveInfo" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 688.0
+margin_right = 1024.0
+margin_bottom = 704.0
+custom_fonts/font = ExtResource( 2 )
+text = "Wave info"
+__meta__ = {
+"_edit_use_anchors_": false
+}

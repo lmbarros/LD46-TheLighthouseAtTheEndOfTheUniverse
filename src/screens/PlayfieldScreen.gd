@@ -9,7 +9,17 @@ func _ready():
 	G.gs.player = get_tree().get_nodes_in_group("player").front()
 	G.gs.lighthouse = get_tree().get_nodes_in_group("lighthouse").front()
 
-	var c := preload("res://characters/Kamikaze.tscn")
-	var e := c.instance()
-	e.initPosition()
-	G.gs.playingField.add_child(e)
+
+func _process(delta: float) -> void:
+	match G.gs.waveMode:
+		G.gs.waveModes.WAITING:
+			G.gs.secsToNextWave -= delta
+			if G.gs.secsToNextWave <= 0.0:
+				G.startNextWave()
+				G.gs.waveMode = G.gs.waveModes.FIGHTING
+
+		G.gs.waveModes.FIGHTING:
+			if G.isWaveDefeated():
+				G.gs.secsToNextWave = G.gs.WAVE_INTERVAL
+				G.gs.waveMode = G.gs.waveModes.WAITING
+				G.gs.waveNumber += 1

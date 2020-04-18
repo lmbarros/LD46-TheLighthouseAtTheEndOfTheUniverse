@@ -19,7 +19,6 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Waves of enemies
 * Basic sound effects
 * Explosion particle effect
 * Background music
@@ -37,6 +36,7 @@ Game title is based on two books. Which ones is left as an exercise for the play
 * Asteroid mining
 * Fix lighthouse with plasteel
 * New resource: uranium (green)
+* Custom game over messages ("you survived to tell the story and feel the shame")
 * Lighthouse fuel (uranium)
 * Refuel lighthouse
 * More resources: iron (gray), silicon (red)

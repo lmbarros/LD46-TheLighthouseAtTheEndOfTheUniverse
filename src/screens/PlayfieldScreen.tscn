@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://screens/PlayfieldScreen.gd" type="Script" id=1]
 [ext_resource path="res://characters/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://characters/Lighthouse.tscn" type="PackedScene" id=3]
 [ext_resource path="res://misc/PlayfieldCamera.tscn" type="PackedScene" id=4]
 [ext_resource path="res://misc/Starfield.tscn" type="PackedScene" id=5]
-[ext_resource path="res://characters/Kamikaze.tscn" type="PackedScene" id=6]
 [ext_resource path="res://misc/HUD.tscn" type="PackedScene" id=7]
 
 [node name="PlayfieldScreen" type="Node2D"]
@@ -21,8 +20,5 @@ rotation = -1.5708
 current = true
 
 [node name="Lighthouse" parent="." instance=ExtResource( 3 )]
-
-[node name="Kamikaze" parent="." instance=ExtResource( 6 )]
-position = Vector2( -526.822, 592.185 )
 
 [node name="HUD" parent="." instance=ExtResource( 7 )]

@@ -2,6 +2,28 @@ extends CanvasLayer
 
 
 func _process(delta):
+	updateHealth()
+	updateWaveInfo()
+
+
+func updateWaveInfo() -> void:
+	var info := ""
+	
+	if G.gs.isGamingOver:
+		info = "Succumbed to wave %s. " % (G.gs.waveNumber - 1)
+
+	elif G.gs.waveMode == G.gs.waveModes.WAITING:
+		if G.gs.waveNumber > 1:
+			info = "Survived wave %s. " % (G.gs.waveNumber - 1)
+		info += "Next wave starts in %s..." % int(G.gs.secsToNextWave)
+
+	elif G.gs.waveMode == G.gs.waveModes.FIGHTING:
+			info = "Defending against wave %s" % G.gs.waveNumber
+
+	$WaveInfo.text = info
+
+
+func updateHealth() -> void:
 	var lh = G.gs.lighthouse
 	var p = G.gs.player
 	
