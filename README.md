@@ -19,7 +19,6 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Lighthouse can die
 * Player can die
 * HUD: Lighthouse health
 * HUD: Player health

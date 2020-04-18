@@ -7,7 +7,7 @@ var speed = 300
 var health = 5.0
 
 
-# Suffers damage, maybe dies
+# Suffers damage, maybe dies.
 func sufferDamage(damage: float) -> void:
 	health -= damage
 	if health <= 0:
