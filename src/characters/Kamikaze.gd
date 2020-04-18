@@ -31,11 +31,7 @@ func _processAttack(delta: float) -> void:
 	var lh = G.gs.lighthouse
 	var vel = (lh.global_position - global_position).normalized()
 	vel *= speed
-	moveBy(vel)
-
-
-func die() -> void:
-	queue_free()
+	moveAndCollide(vel)
 
 
 func getCollisionDamage() -> float:
