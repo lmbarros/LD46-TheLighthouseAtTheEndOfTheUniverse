@@ -17,6 +17,12 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ## Notes to self
 
+### Damage
+
+* Weak bullet: 1
+* Sniper bullet: 25
+* Kamikaze: 100
+
 ### Layers
 
 * Layer 0: Lighthouse
