@@ -9,18 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Object",
+"class": "GameState",
+"language": "GDScript",
+"path": "res://scripts/GameState.gd"
+}, {
 "base": "Node",
 "class": "SbxsRNG",
 "language": "GDScript",
 "path": "res://scripts/rng/RNG.gd"
 } ]
 _global_script_class_icons={
+"GameState": "",
 "SbxsRNG": ""
 }
 
 [application]
 
 config/name="The Lighthouse at the End of the Universe"
+run/main_scene="res://screens/TitleScreen.tscn"
 boot_splash/image="res://splash.png"
 config/icon="res://icon.png"
 
@@ -28,6 +35,7 @@ config/icon="res://icon.png"
 
 RNG="*res://scripts/rng/RNG.gd"
 SS="*res://scripts/scene-stack/SceneStack.gd"
+G="*res://scripts/Globals.gd"
 
 [display]
 

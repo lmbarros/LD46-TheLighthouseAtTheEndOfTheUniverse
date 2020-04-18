@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/GameTitleLargeFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://fonts/GameTitleSmallFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://screens/TitleScreen.gd" type="Script" id=3]
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 0, 0.0980392, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Node2D" parent="."]
+
+[node name="The" type="Label" parent="Title"]
+margin_left = 84.0
+margin_top = 29.0
+margin_right = 186.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 2 )
+text = "The"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lighthouse" type="Label" parent="Title"]
+margin_left = 86.0
+margin_top = 70.0
+margin_right = 584.0
+margin_bottom = 150.0
+custom_fonts/font = ExtResource( 1 )
+text = "Lighthouse"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AtThe" type="Label" parent="Title"]
+margin_left = 84.0
+margin_top = 157.0
+margin_right = 186.0
+margin_bottom = 198.0
+custom_fonts/font = ExtResource( 2 )
+text = "at the"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EndOfTheUniverse" type="Label" parent="Title"]
+margin_left = 86.0
+margin_top = 206.0
+margin_right = 584.0
+margin_bottom = 286.0
+custom_fonts/font = ExtResource( 1 )
+text = "End of the Universe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
