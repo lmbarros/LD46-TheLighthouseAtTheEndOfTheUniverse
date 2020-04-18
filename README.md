@@ -26,6 +26,7 @@ Game title is based on two books. Which ones is left as an exercise for the play
 * Background music
 * Kamikaze behavior
 * Fighter (enemy that targets the player or the lighthouse)
+* Starfield
 * Waves get more and more difficult
 * HUD: Score
 * Sniper (enemy that targets the lighthouse from distance)
