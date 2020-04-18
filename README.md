@@ -19,7 +19,6 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Game Over screen
 * Player suffers damage if collides with enemy
 * Waves of enemies
 * Basic sound effects

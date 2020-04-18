@@ -39,7 +39,7 @@ _global_script_class_icons={
 [application]
 
 config/name="The Lighthouse at the End of the Universe"
-run/main_scene="res://screens/PlayfieldScreen.tscn"
+run/main_scene="res://screens/TitleScreen.tscn"
 boot_splash/image="res://splash.png"
 config/icon="res://icon.png"
 
