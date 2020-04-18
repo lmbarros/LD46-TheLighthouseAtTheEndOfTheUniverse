@@ -17,6 +17,33 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ## Notes to self
 
+### TODO
+
+* Lighthouse can die
+* Player can die
+* HUD: Lighthouse health
+* HUD: Player health
+* HUD: Score
+* Game Over screen
+* Waves of enemies
+* Basic sound effects
+* Explosion particle effect
+* Background music
+* Kamikaze behavior
+* Fighter (enemy that targets the player or the lighthouse)
+* Waves get more and more difficult
+* Sniper (enemy that targets the lighthouse from distance)
+* Resource: plasteel (blue)
+* Asteroids
+* Asteroid mining
+* Fix lighthouse with plasteel
+* New resource: uranium (green)
+* Lighthouse fuel (uranium)
+* Refuel lighthouse
+* More resources: iron (gray), silicon (red)
+* Crafting
+* Some boss or big enemy?
+
 ### Damage
 
 * Weak bullet: 1
