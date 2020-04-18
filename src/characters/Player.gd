@@ -50,6 +50,7 @@ func _processFire() -> void:
 	if Input.is_action_just_pressed("fire"):
 		var bullet = _bulletClass.instance()
 		bullet.fire(self)
+		SM.playShot1()
 
 
 func getSpeed() -> float:
@@ -67,6 +68,7 @@ func sufferDamage(damage: float) -> void:
 
 # Dies. Triggers game over.
 func die() -> void:
+	SM.playExplosion1()
 	isDead = true
 	visible = false
 	collision_layer = 0

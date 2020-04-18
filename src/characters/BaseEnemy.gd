@@ -20,3 +20,8 @@ func sufferDamage(damage: float) -> void:
 # is).
 func initPosition() -> void:
 	position = RNG.pointOnCircumference(INITIAL_POSITION_RADIUS)
+
+
+func die() -> void:
+	SM.playExplosion1()
+	queue_free()

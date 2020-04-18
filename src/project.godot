@@ -48,6 +48,7 @@ config/icon="res://icon.png"
 RNG="*res://scripts/rng/RNG.gd"
 SS="*res://scripts/scene-stack/SceneStack.gd"
 G="*res://scripts/Globals.gd"
+SM="*res://sound/SoundManager.tscn"
 
 [display]
 

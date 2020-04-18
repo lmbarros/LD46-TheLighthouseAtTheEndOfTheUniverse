@@ -10,7 +10,8 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 * Engine: [Godot](http://godotengine.org) 3.2.1.
 * Graphics: [Inkscape](https://inkscape.org) 0.92.4.
-  [GIMP](https://www.gimp.org) 2.10.18 used for the icon.
+  Used [GIMP](https://www.gimp.org) 2.10.18 for the icon.
+* Sound: [SFXR](http://www.drpetter.se/project_sfxr.html).
 * Font: [Orbitron](https://www.theleagueofmoveabletype.com/orbitron), by [Matt
   McInerney](http://pixelspread.com), [SIL Open Font License
   1.1](orbitron-font-license.md).
@@ -19,7 +20,6 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Basic sound effects
 * Explosion particle effect
 * Background music
 * Kamikaze: don't go nuts if lighthouse is dead

@@ -17,4 +17,5 @@ func die() -> void:
 	visible = false
 	collision_layer = 0
 	collision_mask = 0
+	SM.playExplosion2()
 	G.gameOver()
