@@ -171,3 +171,9 @@ func normal(mean: float = 0.0, stdDev: float = 1.0) -> float:
 
 	# There we are
 	return x * stdDev + mean
+
+
+# Returns a random point lying on a circumference with a radius and centered at
+# given point; the default center is the origin, (0,0).
+func pointOnCircumference(radius: float, center: Vector2 = Vector2(0, 0)) -> Vector2:
+	return center + polar2cartesian(radius, uniform(0.0, 2*PI))

@@ -19,11 +19,11 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Enemy method to determine instantiation point
 * Waves of enemies
 * Basic sound effects
 * Explosion particle effect
 * Background music
+* Kamikaze: don't go nuts if lighthouse is dead
 * Kamikaze behavior
 * Fighter (enemy that targets the player or the lighthouse)
 * Starfield

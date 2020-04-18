@@ -28,6 +28,6 @@ func _process(delta: float) -> void:
 		_zoom += ZOOM_INCREASE_SPEED * delta
 
 	_zoom = clamp(_zoom, MIN_ZOOM, MAX_ZOOM)
-
+	
 	if abs(_targetZoom - zoom.x) >= ZOOM_EPSILON:
 		zoom = Vector2(_zoom, _zoom)
