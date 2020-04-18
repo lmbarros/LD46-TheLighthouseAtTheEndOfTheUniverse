@@ -10,3 +10,6 @@ var player = null
 
 # The playing field.
 var playingField = null
+
+# The lighthouse.
+var lighthouse = null

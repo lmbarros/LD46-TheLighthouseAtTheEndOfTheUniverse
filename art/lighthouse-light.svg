@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="384"
+   height="92"
+   viewBox="0 0 101.59999 24.341668"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="lighthouse-light.svg"
+   inkscape:export-filename="/home/lmb/Projects/StackedBoxes/protos/ld46-the-lighthouse-at-the-end-of-the-universe/src/characters/lighthouse-light.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1038">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop1034" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop1036" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1038"
+       id="linearGradient1040"
+       x1="2.133545e-07"
+       y1="288.74536"
+       x2="100.74041"
+       y2="288.59814"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1.3333364e-6,-3.9162203)" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter826"
+       x="-0.022387296"
+       width="1.0447746"
+       y="-0.091849593"
+       height="1.1836992">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.94772884"
+         id="feGaussianBlur828" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000e51"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="55.2869"
+     inkscape:cy="-15.187309"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="1080"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-272.65832)">
+    <path
+       style="opacity:1;fill:url(#linearGradient1040);fill-opacity:1;stroke:none;stroke-width:0.39687502;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99145298;filter:url(#filter826)"
+       id="path878"
+       sodipodi:type="arc"
+       sodipodi:cx="1.5466909e-06"
+       sodipodi:cy="284.82916"
+       sodipodi:rx="101.6"
+       sodipodi:ry="101.6"
+       sodipodi:start="6.1610123"
+       sodipodi:end="0.12217305"
+       d="m 100.84269,272.44724 a 101.6,101.6 0 0 1 0,24.76385 L 1.5466909e-6,284.82916 Z"
+       inkscape:export-filename="/home/lmb/Projects/StackedBoxes/protos/ld46-the-lighthouse-at-the-end-of-the-universe/src/characters/lighthouse-light.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
