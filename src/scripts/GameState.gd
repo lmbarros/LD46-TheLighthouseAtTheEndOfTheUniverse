@@ -13,3 +13,6 @@ var playingField = null
 
 # The lighthouse.
 var lighthouse = null
+
+# Did we trigger a hame over yet?
+var isGamingOver = false

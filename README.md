@@ -18,8 +18,6 @@ Game title is based on two books. Which ones is left as an exercise for the play
 ## Notes to self
 
 ### TODO
-
-* Player can die
 * HUD: Lighthouse health
 * HUD: Player health
 * HUD: Score
