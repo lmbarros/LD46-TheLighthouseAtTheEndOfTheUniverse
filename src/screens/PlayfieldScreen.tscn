@@ -21,4 +21,4 @@ position = Vector2( 390.259, 416.296 )
 rotation = -1.5708
 
 [node name="Lighthouse" parent="." instance=ExtResource( 3 )]
-position = Vector2( 606.277, 360.76 )
+position = Vector2( 640, 360 )
