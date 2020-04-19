@@ -23,21 +23,17 @@ to the player. 🙂
 
 ### TODO
 
-* Sniper (enemy that targets the lighthouse from distance)
 * Main menu: start, quit
 * Main menu: help
 * Double check volume (isn't it too loud?)
-* Resource: plasteel (blue)
-* Asteroids
-* Asteroid mining (simpler: destroy asteroid to mine)
-* Fix lighthouse with plasteel (simpler: fix when asteroid is destroyed!)
-* New resource: uranium (green)
 * Custom game over messages ("you survived to tell the story and feel the shame")
-* Lighthouse fuel (uranium)
-* Refuel lighthouse
-* More resources: iron (gray), silicon (red)
-* Crafting
-* Some boss or big enemy?
+* Asteroids
+* Killing asteroids give health to the lighthouse
+* Excess health to the lighthouse increases its max health
+* Killing other type of asteroids give health to the player
+* Excess health to the player increases its max health
+* Sniper (enemy that targets the lighthouse(and maybe the player?) from distance)
+* Balancing!
 
 ### Damage
 
