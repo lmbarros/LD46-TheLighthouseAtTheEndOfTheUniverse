@@ -44,12 +44,18 @@ func addLargeExplosion(pos: Vector2) -> void:
 
 
 # Enemy classes
+onready var fighterClass = preload("res://characters/Fighter.tscn")
 onready var kamikazeClass = preload("res://characters/Kamikaze.tscn")
 
 
 func startNextWave() -> void:
-	for i in range(3):
+	for i in range(1):
 		var e = kamikazeClass.instance()
+		e.initPosition()
+		gs.playingField.add_child(e)
+
+	for i in range(3):
+		var e = fighterClass.instance()
 		e.initPosition()
 		gs.playingField.add_child(e)
 

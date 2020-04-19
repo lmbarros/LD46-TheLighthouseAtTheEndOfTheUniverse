@@ -12,8 +12,6 @@ var state = states.CIRCLE
 # Number of circulations performed
 var numCircles := 0
 
-const ARRIVAL_EPSILON := 20.0
-
 # Acceleration when attacking; max attack speed
 const ATTACK_ACCELERATION := 50
 const MAX_ATTACK_SPEED := 1000

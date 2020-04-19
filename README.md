@@ -23,7 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Fighter (enemy that targets the player or the lighthouse)
 * Starfield
 * Waves get more and more difficult
 * HUD: Score
@@ -33,8 +32,8 @@ to the player. 🙂
 * Double check volume (isn't it too loud?)
 * Resource: plasteel (blue)
 * Asteroids
-* Asteroid mining
-* Fix lighthouse with plasteel
+* Asteroid mining (simpler: destroy asteroid to mine)
+* Fix lighthouse with plasteel (simpler: fix when asteroid is destroyed!)
 * New resource: uranium (green)
 * Custom game over messages ("you survived to tell the story and feel the shame")
 * Lighthouse fuel (uranium)

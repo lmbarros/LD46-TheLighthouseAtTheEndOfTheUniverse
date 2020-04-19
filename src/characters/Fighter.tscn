@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://characters/BaseEnemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/fighter.svg" type="Texture" id=2]
+[ext_resource path="res://characters/Fighter.gd" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 32.1625
+
+[node name="Fighter" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+modulate = Color( 0.854902, 0.913725, 0.647059, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource( 1 )
+
+[node name="RayCast" type="RayCast2D" parent="." index="2"]
+cast_to = Vector2( 50, 0 )
