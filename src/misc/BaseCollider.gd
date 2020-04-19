@@ -28,8 +28,10 @@ func commonDie() -> void:
 
 
 # Move by a given amount. On collision, dies and causes damage to target.
-func moveAndCollide(vel: Vector2) -> void:
-	rotation = vel.angle()
+func moveAndCollide(vel: Vector2, autoRotate = true) -> void:
+	if autoRotate:
+		rotation = vel.angle()
+
 	var col := move_and_collide(vel)
 	
 	if col != null:

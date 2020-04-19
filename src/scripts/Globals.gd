@@ -1,5 +1,7 @@
 extends Node
 
+const MAX_ASTEROIDS := 3
+
 # The game state.
 var gs: GameState = null
 
@@ -86,3 +88,15 @@ func getGameOverMessage() -> String:
 		return "You were killed by the space marauders! They probably destroyed the lighthouse afterwards. Or maybe they occupied it and then did a better job than you defending it. Maybe."
 	else:
 		return "The lighhouse was destroyed! And worse: you survived and will have to feel the shame of your flop!"
+
+
+
+# Asteroid class
+onready var asteroidClass = preload("res://misc/Asteroid.tscn")
+
+func createAsteroidMaybe() -> void:
+	if gs.asteroidCount < MAX_ASTEROIDS:
+		gs.asteroidCount += 1
+		var a = asteroidClass.instance()
+		a.initPosition()
+		gs.playingField.add_child(a)

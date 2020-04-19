@@ -3,6 +3,7 @@ extends BaseCollider
 const CURE_PLAYER_AMOUNT := 5
 const CURE_LIGHTHOUSE_AMOUNT := 15
 
+var orbitRadius = 0.0
 
 # Remaining health
 var health = 15.0
@@ -38,9 +39,27 @@ func die() -> void:
 
 func _process(delta: float) -> void:
 	$RotatingStuff.rotation += delta * PI
-	while rotation >= 2*PI:
-		rotation -= 2*PI
+	while $RotatingStuff.rotation >= 2*PI:
+		$RotatingStuff.rotation -= 2*PI
+
+	var theta = cartesian2polar(position.x, position.y).y
+
+	while theta >= 2*PI:
+		theta -= 2*PI
+	while theta < 0:
+		theta += 2*PI
+
+	theta += delta * PI/10
+
+	var vel = polar2cartesian(orbitRadius, theta) - position
+
+	moveAndCollide(vel, false)
 
 
 func getCollisionDamage() -> float:
 	return 20.0
+
+
+func initPosition() -> void:
+	orbitRadius = RNG.uniform(1500, 2500)
+	position = RNG.pointOnCircumference(orbitRadius)

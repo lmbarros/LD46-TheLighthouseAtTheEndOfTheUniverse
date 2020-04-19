@@ -23,11 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Asteroids
-* Killing asteroids give health to the lighthouse
-* Excess health to the lighthouse increases its max health
-* Killing other type of asteroids give health to the player
-* Excess health to the player increases its max health
 * Sniper (enemy that targets the lighthouse(and maybe the player?) from distance)
 * Balancing!
 

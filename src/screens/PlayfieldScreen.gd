@@ -9,6 +9,7 @@ func _ready():
 	G.gs.playingField = self
 	G.gs.player = get_tree().get_nodes_in_group("player").front()
 	G.gs.lighthouse = get_tree().get_nodes_in_group("lighthouse").front()
+	G.createAsteroidMaybe()
 
 
 func _process(delta: float) -> void:
@@ -26,6 +27,7 @@ func _process(delta: float) -> void:
 				G.gs.secsToNextWave = G.gs.WAVE_INTERVAL
 				G.gs.waveMode = G.gs.waveModes.WAITING
 				G.gs.waveNumber += 1
+				G.createAsteroidMaybe()
 
 				SM.playConfirm()
 				yield(get_tree().create_timer(0.3), "timeout")

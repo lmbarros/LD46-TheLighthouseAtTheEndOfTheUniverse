@@ -32,3 +32,6 @@ var secsToNextWave := WAVE_INTERVAL
 
 # Message to display on the Game Over screen.
 var gameOverMessage := ""
+
+# Current number of asteroids.
+var asteroidCount := 0
