@@ -32,6 +32,7 @@ to the player. 🙂
 * Sniper (enemy that targets the lighthouse from distance)
 * Main menu: start, quit
 * Main menu: help
+* Double check volume (isn't it too loud?)
 * Resource: plasteel (blue)
 * Asteroids
 * Asteroid mining

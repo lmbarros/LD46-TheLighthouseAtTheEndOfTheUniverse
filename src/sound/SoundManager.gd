@@ -43,18 +43,52 @@ func playUFO5() -> void:
 func playUFO6() -> void:
 	$UFO6.play()
 
-func playIntroMusic() -> void:
-	$InGameMusic.stop()
-	$GameOverMusic.stop()
-	$IntroMusic.play()
+#
+# Music
+#
+
+const MUSIC_FADE_DURATION := 3.0
+
+func _startMusic(player: AudioStreamPlayer) -> void:
+	player.volume_db = 0
+	player.play()
+
+
+func _stopMusic(player: AudioStreamPlayer) -> void:
+	if !player.playing:
+		return
+		
+	var fo := player.find_node("FadeOut") as Tween
+	fo.interpolate_property(player, "volume_db", player.volume_db, -80,
+		MUSIC_FADE_DURATION, Tween.TRANS_QUAD, Tween.EASE_IN_OUT)
+	fo.start()
+
 
 func playInGameMusic() -> void:
-	$IntroMusic.stop()
-	$GameOverMusic.stop()
-	$InGameMusic.play()
+	_stopMusic($IntroMusic)
+	_stopMusic($GameOverMusic)
+	_startMusic($InGameMusic)
+
 
 func playGameOverMusic() -> void:
-	$IntroMusic.stop()
-	$InGameMusic.stop()
-	$GameOverMusic.play()
+	_stopMusic($IntroMusic)
+	_stopMusic($InGameMusic)
+	_startMusic($GameOverMusic)
 
+
+func playIntroMusic() -> void:
+	_stopMusic($InGameMusic)
+	_stopMusic($GameOverMusic)
+	_startMusic($IntroMusic)
+
+
+func _onIntroMusicFadeOutCompleted(object, key):
+	$IntroMusic.stop()
+
+
+func _onInGameMusicFadeOutCompleted(object, key):
+	$InGameMusic.stop()
+
+
+func _onGameOverMusicFadeOutCompleted(object, key):
+	$GameOverMusic.stop()

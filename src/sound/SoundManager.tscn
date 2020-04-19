@@ -67,8 +67,17 @@ stream = ExtResource( 9 )
 [node name="IntroMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 16 )
 
+[node name="FadeOut" type="Tween" parent="IntroMusic"]
+
 [node name="InGameMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 18 )
 
+[node name="FadeOut" type="Tween" parent="InGameMusic"]
+
 [node name="GameOverMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )
+
+[node name="FadeOut" type="Tween" parent="GameOverMusic"]
+[connection signal="tween_completed" from="IntroMusic/FadeOut" to="." method="_onIntroMusicFadeOutCompleted"]
+[connection signal="tween_completed" from="InGameMusic/FadeOut" to="." method="_onInGameMusicFadeOutCompleted"]
+[connection signal="tween_completed" from="GameOverMusic/FadeOut" to="." method="_onGameOverMusicFadeOutCompleted"]
