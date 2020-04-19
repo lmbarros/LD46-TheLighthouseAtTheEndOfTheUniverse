@@ -4,7 +4,8 @@ My entry for Ludum Dare 46; theme is "Keep it Alive".
 
 License is GPL3.
 
-Game title is based on two books. Which ones is left as an exercise for the player. 🙂
+Game title is based on two books. Fining out which ones is left as an exercise
+to the player. 🙂
 
 ## Credits
 
@@ -12,6 +13,8 @@ Game title is based on two books. Which ones is left as an exercise for the play
 * Graphics: [Inkscape](https://inkscape.org) 0.92.4.
   Used [GIMP](https://www.gimp.org) 2.10.18 for the icon.
 * Sound: [SFXR](http://www.drpetter.se/project_sfxr.html).
+* Music created with [Otomata](http://earslap.com/page/otomata.html) and edited
+  with [Audacity](https://www.audacityteam.org).
 * Font: [Orbitron](https://www.theleagueofmoveabletype.com/orbitron), by [Matt
   McInerney](http://pixelspread.com), [SIL Open Font License
   1.1](orbitron-font-license.md).
@@ -20,7 +23,6 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Background music
 * Kamikaze: don't go nuts if lighthouse is dead
 * Kamikaze behavior
 * Fighter (enemy that targets the player or the lighthouse)

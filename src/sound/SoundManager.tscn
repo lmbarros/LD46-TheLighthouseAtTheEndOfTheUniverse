@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://sound/confirm.wav" type="AudioStream" id=1]
 [ext_resource path="res://sound/explosion-2.wav" type="AudioStream" id=2]
@@ -15,6 +15,9 @@
 [ext_resource path="res://sound/ufo-1.wav" type="AudioStream" id=13]
 [ext_resource path="res://sound/ufo-3.wav" type="AudioStream" id=14]
 [ext_resource path="res://sound/SoundManager.gd" type="Script" id=15]
+[ext_resource path="res://sound/intro.ogg" type="AudioStream" id=16]
+[ext_resource path="res://sound/game-over.ogg" type="AudioStream" id=17]
+[ext_resource path="res://sound/in-game.ogg" type="AudioStream" id=18]
 
 [node name="SoundManager" type="Node"]
 script = ExtResource( 15 )
@@ -60,3 +63,12 @@ stream = ExtResource( 11 )
 
 [node name="UFO6" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+
+[node name="IntroMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+
+[node name="InGameMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+
+[node name="GameOverMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )

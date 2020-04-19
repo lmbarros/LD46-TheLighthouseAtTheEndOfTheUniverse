@@ -4,6 +4,7 @@ var _canGo := false
 
 
 func _ready():
+	SM.playGameOverMusic()
 	yield(get_tree().create_timer(2.0), "timeout")
 	_canGo = true
 

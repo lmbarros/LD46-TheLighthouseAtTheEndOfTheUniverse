@@ -43,3 +43,18 @@ func playUFO5() -> void:
 func playUFO6() -> void:
 	$UFO6.play()
 
+func playIntroMusic() -> void:
+	$InGameMusic.stop()
+	$GameOverMusic.stop()
+	$IntroMusic.play()
+
+func playInGameMusic() -> void:
+	$IntroMusic.stop()
+	$GameOverMusic.stop()
+	$InGameMusic.play()
+
+func playGameOverMusic() -> void:
+	$IntroMusic.stop()
+	$InGameMusic.stop()
+	$GameOverMusic.play()
+

@@ -5,12 +5,13 @@ var _canGo := false
 
 func _ready():
 	SS.setInitialScene(self)
+	SM.playIntroMusic()
 	yield(get_tree().create_timer(1.5), "timeout")
 	_canGo = true
 
 
 func onDigOut(_dummy):
-	print("dig out")
+	SM.playIntroMusic()
 	yield(get_tree().create_timer(2.0), "timeout")
 	_canGo = true
 	print("lets go")
