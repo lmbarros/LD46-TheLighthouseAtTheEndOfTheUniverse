@@ -68,7 +68,7 @@ func sufferDamage(damage: float) -> void:
 
 # Dies. Triggers game over.
 func die() -> void:
-	SM.playExplosion1()
+	G.addSmallExplosion(global_position)
 	isDead = true
 	visible = false
 	collision_layer = 0
