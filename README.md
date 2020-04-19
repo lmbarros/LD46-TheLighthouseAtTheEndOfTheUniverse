@@ -23,7 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Waves get more and more difficult
 * HUD: Score
 * Sniper (enemy that targets the lighthouse from distance)
 * Main menu: start, quit

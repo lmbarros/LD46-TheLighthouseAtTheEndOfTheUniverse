@@ -49,16 +49,26 @@ onready var kamikazeClass = preload("res://characters/Kamikaze.tscn")
 
 
 func startNextWave() -> void:
-	for i in range(1):
-		var e = kamikazeClass.instance()
+
+	# Fighters are the bread and butter enemies (what a metaphor!)
+	var k := int(pow(G.gs.waveNumber, 1.1) * RNG.uniform(1.1, 1.5))
+	for i in range(k):
+		createEnemy(fighterClass)
+
+	# Start adding some kamikazes after a few waves
+	if G.gs.waveNumber < 3:
+		k = 0
+	else:
+		k = int((G.gs.waveNumber-3) * RNG.uniform(1.0, 1.2))
+
+	for i in range(k):
+		createEnemy(kamikazeClass)
+
+
+func createEnemy(theClass: PackedScene) -> void:
+		var e = theClass.instance()
 		e.initPosition()
 		gs.playingField.add_child(e)
-
-	for i in range(3):
-		var e = fighterClass.instance()
-		e.initPosition()
-		gs.playingField.add_child(e)
-
 
 func isWaveDefeated() -> bool:
 	if gs.player.isDead:
