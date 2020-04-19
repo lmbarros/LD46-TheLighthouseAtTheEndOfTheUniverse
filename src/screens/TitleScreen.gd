@@ -7,12 +7,14 @@ func _ready():
 	SS.setInitialScene(self)
 	SM.playIntroMusic()
 	yield(get_tree().create_timer(1.5), "timeout")
+	$PlayBtn.grab_focus()
 	_canGo = true
 
 
 func onDigOut(_dummy):
 	SM.playIntroMusic()
 	yield(get_tree().create_timer(2.0), "timeout")
+	$PlayBtn.grab_focus()
 	_canGo = true
 
 
@@ -21,7 +23,10 @@ func isGoEvent(event: InputEvent) -> bool:
 		(event is InputEventJoypadButton && event.pressed))
 
 
-func _input(event: InputEvent) -> void:
-	if _canGo && isGoEvent(event):
-		_canGo = false
+func _onPlayBtnPressed():
+	if _canGo:
 		SS.push("res://screens/PlayfieldScreen.tscn")
+
+
+func _onQuitBtnPressed():
+	SS.pop()

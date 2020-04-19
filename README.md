@@ -23,7 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Main menu: start, quit
 * Main menu: help
 * Double check volume (isn't it too loud?)
 * Custom game over messages ("you survived to tell the story and feel the shame")
