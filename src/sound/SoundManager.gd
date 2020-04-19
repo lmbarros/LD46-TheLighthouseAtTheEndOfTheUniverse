@@ -50,7 +50,7 @@ func playUFO6() -> void:
 const MUSIC_FADE_DURATION := 3.0
 
 func _startMusic(player: AudioStreamPlayer) -> void:
-	player.volume_db = -18
+	player.volume_db = -12
 	player.play()
 
 
