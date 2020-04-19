@@ -23,5 +23,5 @@ func initPosition() -> void:
 
 
 func die() -> void:
-	SM.playExplosion1()
+	G.addSmallExplosion(global_position)
 	queue_free()

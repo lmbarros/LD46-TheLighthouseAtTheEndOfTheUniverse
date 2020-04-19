@@ -11,6 +11,38 @@ func gameOver() -> void:
 		SS.replaceTop("res://screens/GameOverScreen.tscn")
 
 
+# Effects classes
+onready var bulletHitClass = preload("res://effects/BulletHit.tscn")
+onready var smallExplosionClass = preload("res://effects/SmallExplosion.tscn")
+onready var largeExplosionClass = preload("res://effects/LargeExplosion.tscn")
+
+func addBulletHit(pos: Vector2) -> void:
+	if RNG.flipCoin():
+		SM.playHit1()
+	else:
+		SM.playHit2()
+	var e = bulletHitClass.instance()
+	e.position = pos
+	e.emitting = true
+	gs.playingField.add_child(e)
+
+
+func addSmallExplosion(pos: Vector2) -> void:
+	SM.playExplosion2()
+	var e = smallExplosionClass.instance()
+	e.position = pos
+	e.emitting = true
+	gs.playingField.add_child(e)
+
+
+func addLargeExplosion(pos: Vector2) -> void:
+	SM.playExplosion1()
+	var e = largeExplosionClass.instance()
+	e.position = pos
+	e.emitting = true
+	gs.playingField.add_child(e)
+
+
 # Enemy classes
 onready var kamikazeClass = preload("res://characters/Kamikaze.tscn")
 

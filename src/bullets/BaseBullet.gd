@@ -31,3 +31,8 @@ func processAI(delta: float) -> void:
 # node. Can be overriden.
 func onExpireTTL() -> void:
 	queue_free()
+
+
+func die() -> void:
+	G.addBulletHit(global_position)
+	queue_free()

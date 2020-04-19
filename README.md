@@ -20,7 +20,6 @@ Game title is based on two books. Which ones is left as an exercise for the play
 
 ### TODO
 
-* Explosion particle effect
 * Background music
 * Kamikaze: don't go nuts if lighthouse is dead
 * Kamikaze behavior
