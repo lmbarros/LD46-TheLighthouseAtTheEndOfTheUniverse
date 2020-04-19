@@ -9,6 +9,11 @@ func _ready():
 	_canGo = true
 
 
-func _input(event) -> void:
-	if _canGo && event is InputEventKey or event is InputEventJoypadButton:
+func isGoEvent(event: InputEvent) -> bool:
+	return ((event is InputEventKey && event.pressed) ||
+		(event is InputEventJoypadButton && event.pressed))
+
+
+func _input(event: InputEvent) -> void:
+	if _canGo && isGoEvent(event):
 		SS.pop()

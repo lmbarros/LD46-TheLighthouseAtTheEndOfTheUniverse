@@ -14,10 +14,14 @@ func onDigOut(_dummy):
 	SM.playIntroMusic()
 	yield(get_tree().create_timer(2.0), "timeout")
 	_canGo = true
-	print("lets go")
 
 
-func _input(event) -> void:
-	if _canGo && event is InputEventKey or event is InputEventJoypadButton:
-		SS.push("res://screens/PlayfieldScreen.tscn")
+func isGoEvent(event: InputEvent) -> bool:
+	return ((event is InputEventKey && event.pressed) ||
+		(event is InputEventJoypadButton && event.pressed))
+
+
+func _input(event: InputEvent) -> void:
+	if _canGo && isGoEvent(event):
 		_canGo = false
+		SS.push("res://screens/PlayfieldScreen.tscn")
