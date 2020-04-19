@@ -18,7 +18,7 @@ var lighthouse = null
 var isGamingOver := false
 
 # Time between waves, in seconds.
-const WAVE_INTERVAL := 5.0
+const WAVE_INTERVAL := 15.0
 
 # The current (or next) wave
 var waveNumber: int = 1

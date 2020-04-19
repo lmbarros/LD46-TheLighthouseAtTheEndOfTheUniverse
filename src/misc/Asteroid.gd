@@ -50,7 +50,7 @@ func _process(delta: float) -> void:
 	while theta < 0:
 		theta += 2*PI
 
-	theta += delta * PI/10
+	theta += delta * PI/20
 
 	var vel = polar2cartesian(orbitRadius, theta) - position
 
