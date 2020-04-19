@@ -26,3 +26,9 @@ func _process(delta: float) -> void:
 				G.gs.secsToNextWave = G.gs.WAVE_INTERVAL
 				G.gs.waveMode = G.gs.waveModes.WAITING
 				G.gs.waveNumber += 1
+
+				SM.playConfirm()
+				yield(get_tree().create_timer(0.3), "timeout")
+				SM.playConfirm()
+				yield(get_tree().create_timer(0.3), "timeout")
+				SM.playConfirm()
