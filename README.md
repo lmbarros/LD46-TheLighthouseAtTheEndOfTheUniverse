@@ -23,7 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Double check volume (isn't it too loud?)
 * Asteroids
 * Killing asteroids give health to the lighthouse
 * Excess health to the lighthouse increases its max health
