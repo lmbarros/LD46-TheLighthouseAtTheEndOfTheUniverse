@@ -113,6 +113,7 @@ func processAttack(delta: float) -> void:
 
 	if attackStage == 0:
 		attackStage = 1
+		$Sprite.self_modulate = "#EE1111"
 		for i in range(7):
 			SM.playUFO1()
 			yield(get_tree().create_timer(2.0/(i+1)), "timeout")
