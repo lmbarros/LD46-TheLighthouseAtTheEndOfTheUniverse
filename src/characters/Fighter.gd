@@ -108,5 +108,9 @@ func fire() -> void:
 		yield(get_tree().create_timer(0.15), "timeout")
 	isFiring = false
 
+
 func getCollisionDamage() -> float:
 	return 5.0
+
+func getScore() -> int:
+	return 10

@@ -49,7 +49,6 @@ onready var kamikazeClass = preload("res://characters/Kamikaze.tscn")
 
 
 func startNextWave() -> void:
-
 	# Fighters are the bread and butter enemies (what a metaphor!)
 	var k := int(pow(G.gs.waveNumber, 1.1) * RNG.uniform(1.1, 1.5))
 	for i in range(k):

@@ -4,6 +4,7 @@ extends CanvasLayer
 func _process(delta):
 	updateHealth()
 	updateWaveInfo()
+	updateScore()
 
 
 func updateWaveInfo() -> void:
@@ -34,3 +35,7 @@ func updateHealth() -> void:
 	$Stats/Ship/Label/Value.text = "%s / %s" % [ p.health, p.maxHealth ]
 	$Stats/Ship.max_value = p.maxHealth
 	$Stats/Ship.value = p.health
+
+
+func updateScore() -> void:
+	$Score/Value.text = str(G.gs.score)

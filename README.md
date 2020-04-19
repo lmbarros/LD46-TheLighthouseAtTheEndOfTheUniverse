@@ -23,7 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* HUD: Score
 * Sniper (enemy that targets the lighthouse from distance)
 * Main menu: start, quit
 * Main menu: help

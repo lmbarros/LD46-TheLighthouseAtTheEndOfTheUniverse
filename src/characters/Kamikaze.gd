@@ -132,3 +132,7 @@ func processAttack(delta: float) -> void:
 
 func getCollisionDamage() -> float:
 	return 100.0
+
+
+func getScore() -> int:
+	return 25

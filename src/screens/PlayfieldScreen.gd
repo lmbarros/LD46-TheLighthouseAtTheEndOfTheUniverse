@@ -21,6 +21,8 @@ func _process(delta: float) -> void:
 
 		G.gs.waveModes.FIGHTING:
 			if G.isWaveDefeated():
+				G.gs.score += int(pow(G.gs.waveNumber, 1.5) * 8)
+				
 				G.gs.secsToNextWave = G.gs.WAVE_INTERVAL
 				G.gs.waveMode = G.gs.waveModes.WAITING
 				G.gs.waveNumber += 1

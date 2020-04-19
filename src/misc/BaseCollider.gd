@@ -18,7 +18,12 @@ func _process(delta: float) -> void:
 
 # Common behavior: stop processing and calls custom behavior
 func commonDie() -> void:
+	# YODO! (You Only Die Once)
+	if isDead:
+		return
 	isDead = true
+
+	G.gs.score += getScore()
 	die()
 
 
@@ -50,3 +55,8 @@ func die():
 # as needed.
 func getCollisionDamage() -> float:
 	return 0.0
+
+
+# Score for killing one of those.
+func getScore() -> int:
+	return 0
