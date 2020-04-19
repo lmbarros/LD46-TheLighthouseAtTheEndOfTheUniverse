@@ -11,7 +11,7 @@ onready var bulletClass = preload("res://bullets/WeakBullet.tscn")
 var goToTarget := Vector2(0,0)
 
 # Will fire if target is this close.
-const MIN_ATTACK_DISTANCE := 300.0
+const MIN_ATTACK_DISTANCE := 750.0
 
 # Must keep flying straight when firing, until the volley is complete.
 var isFiring := false
@@ -86,7 +86,7 @@ func doGoTo() -> void:
 	state = states.GOTO
 	var currPolar := cartesian2polar(position.x, position.y)
 	var angle := currPolar.y + RNG.uniform(-1, +1)
-	var radius := RNG.uniform(350.0, 1000.0)
+	var radius := RNG.uniform(450.0, 1200.0)
 	goToTarget = polar2cartesian(radius, angle)
 
 
