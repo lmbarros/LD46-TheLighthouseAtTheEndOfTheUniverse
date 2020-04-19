@@ -27,6 +27,7 @@ func sufferDamage(damage: float) -> void:
 
 func die() -> void:
 	G.addLargeExplosion(global_position)
+	G.gs.asteroidCount -= 1
 	queue_free()
 	var cureTarget = G.gs.lighthouse if curesLighthouse else G.gs.player
 	var cureAmount = CURE_LIGHTHOUSE_AMOUNT if curesLighthouse else CURE_PLAYER_AMOUNT
