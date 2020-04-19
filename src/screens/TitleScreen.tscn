@@ -260,7 +260,7 @@ anims/Lighthouse = SubResource( 1 )
 [node name="PlayBtn" type="Button" parent="."]
 margin_left = 1060.0
 margin_top = 476.228
-margin_right = 1239.0
+margin_right = 1240.0
 margin_bottom = 536.228
 focus_neighbour_bottom = NodePath("../HelpBtn")
 custom_fonts/font = ExtResource( 5 )
@@ -272,7 +272,7 @@ __meta__ = {
 [node name="HelpBtn" type="Button" parent="."]
 margin_left = 1060.0
 margin_top = 548.228
-margin_right = 1239.0
+margin_right = 1240.0
 margin_bottom = 608.228
 focus_neighbour_top = NodePath("../PlayBtn")
 focus_neighbour_bottom = NodePath("../QuitBtn")
@@ -285,7 +285,7 @@ __meta__ = {
 [node name="QuitBtn" type="Button" parent="."]
 margin_left = 1060.0
 margin_top = 621.228
-margin_right = 1239.0
+margin_right = 1240.0
 margin_bottom = 681.228
 focus_neighbour_top = NodePath("../HelpBtn")
 custom_fonts/font = ExtResource( 5 )
