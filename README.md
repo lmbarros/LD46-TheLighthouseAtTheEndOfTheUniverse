@@ -25,7 +25,6 @@ to the player. 🙂
 
 * Main menu: help
 * Double check volume (isn't it too loud?)
-* Custom game over messages ("you survived to tell the story and feel the shame")
 * Asteroids
 * Killing asteroids give health to the lighthouse
 * Excess health to the lighthouse increases its max health

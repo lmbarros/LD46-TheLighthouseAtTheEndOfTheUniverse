@@ -8,6 +8,7 @@ func gameOver() -> void:
 	if !gs.isGamingOver:
 		gs.isGamingOver = true
 		yield(get_tree().create_timer(5.0), "timeout")
+		gs.gameOverMessage = getGameOverMessage()
 		SS.replaceTop("res://screens/GameOverScreen.tscn")
 
 
@@ -69,9 +70,19 @@ func createEnemy(theClass: PackedScene) -> void:
 		e.initPosition()
 		gs.playingField.add_child(e)
 
+
 func isWaveDefeated() -> bool:
 	if gs.player.isDead:
 		return false
 
 	var enemies := get_tree().get_nodes_in_group("enemies")
 	return enemies.size() == 0
+
+
+func getGameOverMessage() -> String:
+	if gs.player.isDead && gs.lighthouse.isDead:
+		return "Both you and the lighthouse were destroyed! A defeat combo!"
+	elif gs.player.isDead:
+		return "You were killed by the space marauders! They probably destroyed the lighthouse afterwards. Or maybe they occupied it and then did a better job than you defending it. Maybe."
+	else:
+		return "The lighhouse was destroyed! And worse: you survived and will have to feel the shame of your flop!"

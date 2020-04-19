@@ -29,3 +29,6 @@ var waveMode = waveModes.WAITING
 
 # Seconds until the next wave start.
 var secsToNextWave := WAVE_INTERVAL
+
+# Message to display on the Game Over screen.
+var gameOverMessage := ""
