@@ -254,6 +254,7 @@ offset = Vector2( 176, 0 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Lighthouse"
+playback_speed = 1.5
 anims/Lighthouse = SubResource( 1 )
 
 [node name="PlayBtn" type="Button" parent="."]
