@@ -26,19 +26,22 @@ func decideWhatToDo() -> void:
 	var r := RNG.uniform()
 	if r < 0.15:
 		doGoTo()
-	elif r < 0.40:
+	elif r < 0.40 && !G.gs.lighthouse.isDead:
 		doAttackLighthouse()
 	else:
 		# Don't fly towards the player if the lighthouse is on the way
 		$RayCast.cast_to = to_local(G.gs.player.position)
 		$RayCast.force_raycast_update()
 		if $RayCast.is_colliding():
-			if RNG.bernoulli(0.75):
+			if RNG.bernoulli(0.75) && !G.gs.lighthouse.isDead:
 				doAttackLighthouse()
 			else:
 				doGoTo()
 		else:
-			doAttackPlayer()
+			if !G.gs.player.isDead:
+				doAttackPlayer()
+			else:
+				doGoTo()
 
 
 func processAI(delta: float) -> void:
