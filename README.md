@@ -23,8 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Kamikaze: don't go nuts if lighthouse is dead
-* Kamikaze behavior
 * Fighter (enemy that targets the player or the lighthouse)
 * Starfield
 * Waves get more and more difficult
