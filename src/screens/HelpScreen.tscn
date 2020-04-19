@@ -34,9 +34,7 @@ margin_top = 80.0
 margin_right = 629.0
 margin_bottom = 688.0
 custom_fonts/font = ExtResource( 2 )
-text = "Story
-
-The laborious Tellurian government constructed a most needed space lighthouse at the end of the universe, where many ships used to wreck or get lost.
+text = "The laborious Tellurian government constructed a most needed space lighthouse at the end of the universe, where many ships used to wreck or get lost.
 
 (Nobody really understand what they were doing there, but anyway.)
 
@@ -52,14 +50,15 @@ margin_top = 80.0
 margin_right = 1248.0
 margin_bottom = 498.0
 custom_fonts/font = ExtResource( 2 )
-text = "Controls
-
-The controls are optimized for controllers with analog sticks, but you can play with a keyboard anyway.
+text = "The controls are optimized for controllers with analog sticks, but you can play with a keyboard nevertheless.
 
 Ship movement: Left analog stick / WASD / Arrows
 
 Fire: A button / Cross button / Control
-"
+
+Destroyng blue asteroids give you health. Red asterdoids are good for the lighthouse.
+
+Waves of enemies keep coming until you lose. Sorry."
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
