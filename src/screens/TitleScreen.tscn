@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://fonts/GameTitleLargeFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://fonts/GameTitleSmallFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://screens/TitleScreen.gd" type="Script" id=3]
 [ext_resource path="res://characters/lighthouse-light.png" type="Texture" id=4]
 [ext_resource path="res://fonts/GUIFont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://fonts/HUDValueFont.tres" type="DynamicFont" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Lighthouse"
@@ -290,6 +291,17 @@ margin_bottom = 681.228
 focus_neighbour_top = NodePath("../HelpBtn")
 custom_fonts/font = ExtResource( 5 )
 text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MadeBy" type="Label" parent="."]
+margin_left = 19.0
+margin_top = 690.0
+margin_right = 847.0
+margin_bottom = 706.0
+custom_fonts/font = ExtResource( 6 )
+text = "Created by Leandro Motta Barros in 48 hours for Ludum Dare 46 (\"Keep it alive\"). April, 2020."
 __meta__ = {
 "_edit_use_anchors_": false
 }
