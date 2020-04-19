@@ -39,8 +39,9 @@ func moveAndCollide(vel: Vector2, autoRotate = true) -> void:
 
 		if target.has_method("sufferDamage"):
 			target.call_deferred("sufferDamage", getCollisionDamage())
-
-		commonDie()
+			
+		if has_method("sufferDamage"):
+			call_deferred("sufferDamage", target.getCollisionDamage())
 
 
 # Override in subclasses if desired.

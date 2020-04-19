@@ -74,3 +74,7 @@ func die() -> void:
 	collision_layer = 0
 	collision_mask = 0
 	G.gameOver()
+
+
+func getCollisionDamage() -> float:
+	return 15.0

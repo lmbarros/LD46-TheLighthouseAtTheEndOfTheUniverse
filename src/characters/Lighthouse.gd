@@ -20,3 +20,7 @@ func die() -> void:
 	collision_mask = 0
 	G.addLargeExplosion(global_position)
 	G.gameOver()
+
+
+func getCollisionDamage() -> float:
+	return 1000.0

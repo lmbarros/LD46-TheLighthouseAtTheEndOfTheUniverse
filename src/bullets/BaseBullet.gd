@@ -36,3 +36,7 @@ func onExpireTTL() -> void:
 func die() -> void:
 	G.addBulletHit(global_position)
 	queue_free()
+
+
+func sufferDamage(amount: float) -> void:
+	die()
