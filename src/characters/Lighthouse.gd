@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-var maxHealth := 500.0
+var maxHealth := 250.0
 var health := maxHealth
 var isDead := false
 
