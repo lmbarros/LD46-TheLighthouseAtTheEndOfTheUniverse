@@ -12,7 +12,7 @@ resource_name = "spin"
 length = 6.0
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("LightSprite:rotation_degrees")
+tracks/0/path = NodePath(".:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -27,6 +27,7 @@ tracks/0/keys = {
 [node name="Lighthouse" type="StaticBody2D" groups=[
 "lighthouse",
 ]]
+rotation = 6.28319
 collision_mask = 62
 script = ExtResource( 3 )
 
@@ -38,6 +39,7 @@ texture = ExtResource( 1 )
 
 [node name="LightSprite" type="Sprite" parent="."]
 self_modulate = Color( 1, 0.968627, 0.74902, 1 )
+rotation = 6.28319
 texture = ExtResource( 2 )
 offset = Vector2( 205, 0 )
 
