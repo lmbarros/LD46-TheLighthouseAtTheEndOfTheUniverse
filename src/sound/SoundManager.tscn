@@ -24,58 +24,75 @@ script = ExtResource( 15 )
 
 [node name="Shot1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
+volume_db = -25.0
 
 [node name="Shot2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+volume_db = -25.0
 
 [node name="Explosion1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
+volume_db = -25.0
 
 [node name="Explosion2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
+volume_db = -25.0
 
 [node name="Hit1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+volume_db = -25.0
 
 [node name="Hit2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+volume_db = -25.0
 
 [node name="Select" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -25.0
 
 [node name="Confirm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
+volume_db = -25.0
 
 [node name="UFO1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
+volume_db = -25.0
 
 [node name="UFO2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
+volume_db = -25.0
 
 [node name="UFO3" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
+volume_db = -25.0
 
 [node name="UFO4" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
+volume_db = -25.0
 
 [node name="UFO5" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
+volume_db = -25.0
 
 [node name="UFO6" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+volume_db = -25.0
 
 [node name="IntroMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 16 )
+volume_db = -18.0
 
 [node name="FadeOut" type="Tween" parent="IntroMusic"]
 
 [node name="InGameMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 18 )
+volume_db = -18.0
 
 [node name="FadeOut" type="Tween" parent="InGameMusic"]
 
 [node name="GameOverMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )
+volume_db = -18.0
 
 [node name="FadeOut" type="Tween" parent="GameOverMusic"]
 [connection signal="tween_completed" from="IntroMusic/FadeOut" to="." method="_onIntroMusicFadeOutCompleted"]
