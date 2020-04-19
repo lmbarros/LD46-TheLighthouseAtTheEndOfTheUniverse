@@ -3,7 +3,7 @@ extends KinematicBody2D
 # Top speed in pixels/second.
 const TOP_SPEED = 300
 
-var maxHealth: float = 10.0
+var maxHealth: float = 25.0
 
 # Health. Player dies if <= 0.0.
 var health: float = maxHealth
