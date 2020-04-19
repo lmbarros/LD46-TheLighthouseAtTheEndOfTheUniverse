@@ -6,7 +6,7 @@ var speed = 300
 # Remaining health
 var health = 5.0
 
-const INITIAL_POSITION_RADIUS := 1500.0
+const INITIAL_POSITION_RADIUS := 2500.0
 
 # Consider we arrived if the squared distance to the destination is smaller
 # than this.
