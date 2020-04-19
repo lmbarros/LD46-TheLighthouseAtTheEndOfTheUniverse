@@ -23,7 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Main menu: help
 * Double check volume (isn't it too loud?)
 * Asteroids
 * Killing asteroids give health to the lighthouse

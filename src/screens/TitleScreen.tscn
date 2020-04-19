@@ -294,4 +294,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="PlayBtn" to="." method="_onPlayBtnPressed"]
+[connection signal="pressed" from="HelpBtn" to="." method="_onHelpBtnPressed"]
 [connection signal="pressed" from="QuitBtn" to="." method="_onQuitBtnPressed"]

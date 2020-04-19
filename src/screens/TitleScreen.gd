@@ -30,3 +30,7 @@ func _onPlayBtnPressed():
 
 func _onQuitBtnPressed():
 	SS.pop()
+
+
+func _onHelpBtnPressed():
+	SS.push("res://screens/HelpScreen.tscn")

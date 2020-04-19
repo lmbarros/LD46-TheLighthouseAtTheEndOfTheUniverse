@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/GameTitleSmallFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://fonts/HelpFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://fonts/GUIFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://screens/HelpScreen.gd" type="Script" id=4]
+
+[node name="HelpScreen" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 0, 0.0980392, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="HelpLabel" type="Label" parent="."]
+margin_left = 48.7129
+margin_top = 25.6248
+margin_right = 175.713
+margin_bottom = 69.6248
+custom_fonts/font = ExtResource( 1 )
+text = "Help"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Story" type="Label" parent="."]
+margin_left = 52.0
+margin_top = 80.0
+margin_right = 629.0
+margin_bottom = 688.0
+custom_fonts/font = ExtResource( 2 )
+text = "Story
+
+The laborious Tellurian government constructed a most needed space lighthouse at the end of the universe, where many ships used to wreck or get lost.
+
+(Nobody really understand what they were doing there, but anyway.)
+
+You were assigned as the lighthouse keeper, and your duty is to defend it against space pirates, marauders and all this scourge."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HelpText" type="Label" parent="."]
+margin_left = 671.0
+margin_top = 80.0
+margin_right = 1248.0
+margin_bottom = 498.0
+custom_fonts/font = ExtResource( 2 )
+text = "Controls
+
+The controls are optimized for controllers with analog sticks, but you can play with a keyboard anyway.
+
+Ship movement: Left analog stick / WASD / Arrows
+
+Fire: A button / Cross button / Control
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ThanksBtn" type="Button" parent="."]
+margin_left = 1060.0
+margin_top = 621.0
+margin_right = 1240.0
+margin_bottom = 681.0
+custom_fonts/font = ExtResource( 3 )
+text = "Thanks!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ThanksBtn" to="." method="_onThanksBtnPressed"]
