@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://misc/BaseCollider.tscn" type="PackedScene" id=1]
+[ext_resource path="res://misc/Asteroid.gd" type="Script" id=2]
+[ext_resource path="res://misc/asteroid-ore.svg" type="Texture" id=3]
+[ext_resource path="res://misc/asteroid.svg" type="Texture" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 46.3648
+
+[node name="Asteroid" groups=[
+"asteroids",
+] instance=ExtResource( 1 )]
+collision_layer = 4
+collision_mask = 30
+script = ExtResource( 2 )
+
+[node name="RotatingStuff" type="Node2D" parent="." index="0"]
+
+[node name="Rock" type="Sprite" parent="RotatingStuff" index="0"]
+self_modulate = Color( 0.466667, 0.462745, 0.462745, 1 )
+texture = ExtResource( 4 )
+
+[node name="Ore" type="Sprite" parent="RotatingStuff" index="1"]
+self_modulate = Color( 0.878431, 0.933333, 0.4, 1 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+shape = SubResource( 1 )

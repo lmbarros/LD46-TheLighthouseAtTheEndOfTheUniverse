@@ -41,7 +41,7 @@ func _processMove(delta: float) -> void:
 	var col := move_and_collide(velocity * delta)
 	if col != null:
 		var target := col.collider
-		if target.is_in_group("enemies"):
+		if target.is_in_group("enemies") || target.is_in_group("asteroids"):
 			sufferDamage(target.getCollisionDamage())
 			target.commonDie()
 
