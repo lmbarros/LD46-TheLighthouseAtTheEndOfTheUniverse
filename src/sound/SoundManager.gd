@@ -51,7 +51,8 @@ const MUSIC_FADE_DURATION := 3.0
 
 func _startMusic(player: AudioStreamPlayer) -> void:
 	player.volume_db = -12
-	player.play()
+	if !player.playing:
+		player.play()
 
 
 func _stopMusic(player: AudioStreamPlayer) -> void:
