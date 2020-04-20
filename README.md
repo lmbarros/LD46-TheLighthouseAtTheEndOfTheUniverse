@@ -23,7 +23,6 @@ to the player. 🙂
 
 ### TODO
 
-* Sniper (enemy that targets the lighthouse(and maybe the player?) from distance)
 * Balancing!
 
 ### Damage
