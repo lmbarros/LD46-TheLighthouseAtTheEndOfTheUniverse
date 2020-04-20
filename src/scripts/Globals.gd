@@ -49,9 +49,12 @@ func addLargeExplosion(pos: Vector2) -> void:
 # Enemy classes
 onready var fighterClass = preload("res://characters/Fighter.tscn")
 onready var kamikazeClass = preload("res://characters/Kamikaze.tscn")
+onready var sniperClass = preload("res://characters/Sniper.tscn")
 
 
 func startNextWave() -> void:
+	createEnemy(sniperClass)
+	
 	# Fighters are the bread and butter enemies (what a metaphor!)
 	var k := int(pow(G.gs.waveNumber, 1.1) * RNG.uniform(1.1, 1.5))
 	for i in range(k):
