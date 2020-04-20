@@ -1,6 +1,6 @@
 extends Node
 
-const MAX_ASTEROIDS := 3
+const MAX_ASTEROIDS := 5
 
 # The game state.
 var gs: GameState = null

@@ -21,10 +21,6 @@ to the player. 🙂
 
 ## Notes to self
 
-### TODO
-
-* Balancing!
-
 ### Damage
 
 * Weak bullet: 1
