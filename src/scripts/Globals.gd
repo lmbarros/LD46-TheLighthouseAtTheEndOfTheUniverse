@@ -53,10 +53,8 @@ onready var sniperClass = preload("res://characters/Sniper.tscn")
 
 
 func startNextWave() -> void:
-	createEnemy(sniperClass)
-	
 	# Fighters are the bread and butter enemies (what a metaphor!)
-	var k := int(pow(G.gs.waveNumber, 1.1) * RNG.uniform(1.1, 1.5))
+	var k := int(pow(G.gs.waveNumber, 1.1) * RNG.uniform(1.1, 1.25))
 	for i in range(k):
 		createEnemy(fighterClass)
 
@@ -64,10 +62,19 @@ func startNextWave() -> void:
 	if G.gs.waveNumber < 3:
 		k = 0
 	else:
-		k = int((G.gs.waveNumber-3) * RNG.uniform(1.0, 1.2))
+		k = int(pow(G.gs.waveNumber-3, 1.2) * RNG.uniform(1.0, 1.2))
 
 	for i in range(k):
 		createEnemy(kamikazeClass)
+
+	# And then some snipers!
+	if G.gs.waveNumber < 5:
+		k = 0
+	else:
+		k = int(pow(G.gs.waveNumber-5, 1.2) * RNG.uniform(1.1, 1.3))
+
+	for i in range(k):
+		createEnemy(sniperClass)
 
 
 func createEnemy(theClass: PackedScene) -> void:
