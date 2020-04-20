@@ -37,3 +37,7 @@ func _onQuitBtnPressed():
 func _onHelpBtnPressed():
 	SM.playConfirm()
 	SS.push("res://screens/HelpScreen.tscn")
+
+
+func _onButtonFocus():
+	SM.playSelect()

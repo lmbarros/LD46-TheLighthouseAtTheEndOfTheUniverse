@@ -305,6 +305,9 @@ text = "Created by Leandro Motta Barros in 48 hours for Ludum Dare 46 (\"Keep it
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="focus_entered" from="PlayBtn" to="." method="_onButtonFocus"]
 [connection signal="pressed" from="PlayBtn" to="." method="_onPlayBtnPressed"]
+[connection signal="focus_entered" from="HelpBtn" to="." method="_onButtonFocus"]
 [connection signal="pressed" from="HelpBtn" to="." method="_onHelpBtnPressed"]
+[connection signal="focus_entered" from="QuitBtn" to="." method="_onButtonFocus"]
 [connection signal="pressed" from="QuitBtn" to="." method="_onQuitBtnPressed"]
