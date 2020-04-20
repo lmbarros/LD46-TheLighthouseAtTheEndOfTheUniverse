@@ -18,4 +18,5 @@ func updateText() -> void:
 
 
 func _onSighBtnPressed():
+	SM.playConfirm()
 	SS.pop()

@@ -25,12 +25,15 @@ func isGoEvent(event: InputEvent) -> bool:
 
 func _onPlayBtnPressed():
 	if _canGo:
+		SM.playConfirm()
 		SS.push("res://screens/PlayfieldScreen.tscn")
 
 
 func _onQuitBtnPressed():
+	SM.playConfirm()
 	SS.pop()
 
 
 func _onHelpBtnPressed():
+	SM.playConfirm()
 	SS.push("res://screens/HelpScreen.tscn")

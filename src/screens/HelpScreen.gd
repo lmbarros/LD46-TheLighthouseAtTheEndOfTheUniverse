@@ -5,4 +5,5 @@ func _ready():
 
 
 func _onThanksBtnPressed():
+	SM.playConfirm()
 	SS.pop()
